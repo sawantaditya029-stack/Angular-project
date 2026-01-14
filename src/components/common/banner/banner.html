@@ -1,0 +1,16 @@
+<div
+  id="banner"
+  style="height: 90vh"
+  class="d-flex justify-content-center align-items-center text-white flex-column gap-3"
+  [ngStyle]="{
+    'background-image':
+      'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(' + bgImg + ')',
+    'background-size': 'cover'
+  }"
+>
+  <h1 class="fw-bold w-75 text-center" style="font-size: 6.5vw">{{ title }}</h1>
+  <h3>{{ subTitle }}</h3>
+  <button (click)="ClickHandler()" class="btn rounded-5 theme-bg mt-5 py-2 px-4 fw-bold text-light" style="font-size: 18px">
+    {{ ctaBtnText }}
+  </button>
+</div>

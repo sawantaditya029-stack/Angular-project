@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center mt-5 pt-3">Industries We Serve</h3>
+      <p class="theme-font-size-sm text-center">
+        At DArch Tech, we work with businesses across all industries, delivering scalable digital
+        solutions that meet unique business challenges and customer needs.
+      </p>
+    </div>
+  </div>
+  <div class="row my-3 px-4">
+    @for (INDUSTRIE of INDUSTRIES; track $index) {
+    <div class="col-3 p-3">
+      <div class="d-flex align-items-center flex-column">
+        <i class="bi fs-3 text-secondary" ngClass="{{ INDUSTRIE.icon }}"></i>
+        <div class="theme-font-size-sm theme-text fw-bold">{{ INDUSTRIE.title }}</div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

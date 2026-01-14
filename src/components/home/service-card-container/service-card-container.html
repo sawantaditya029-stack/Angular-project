@@ -1,0 +1,22 @@
+<div class="container px-5">
+  <div class="service-cards row">
+    @for (card of cards; track $index) {
+    <div class="col-4 px-3">
+      <div class="theme-card p-3 shadow-sm" style="height: 75vh">
+        <div style="height: 40%" class="icon d-flex justify-content-center align-items-center">
+          <div class="circle bg-light p-5 shadow-sm rounded-circle">
+            <i class="bi fs-1 m-2 theme-text" [ngClass]="card.icon"></i>
+          </div>
+        </div>
+        <h5 class="text-center">{{ card.title }}</h5>
+        <p class="theme-font-size-sm text-center px-3">
+          {{ card.description }}
+        </p>
+        <div class="theme-circle-btn mb-3 shadow border rounded-circle">
+          <i class="bi bi-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

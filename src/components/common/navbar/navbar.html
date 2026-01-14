@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary col-11">
+  <div class="container-fluid">
+    <a class="brand=logo col-1" href="#">
+      <img src="https://darchtech.com/assets/images/Logo-light.png" alt="Bootstrap" width="90" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto gap-5 fs-5 custom-navlinks">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about">Company</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            routerLink="/services"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            IT Services
+          </a>
+          <ul class="dropdown-menu border-0 rounded-0 shadow-sm p-2 text-decoration-none">
+            <li> <a class="dropdown-item" routerLink="/services/web-development">
+             
+              Web Development Service
+            </a></li>
+            <li><a class="dropdown-item" routerLink="/services/mobile-development">
+              Mobile Development Service
+            </a></li>
+            <li><a class="dropdown-item" routerLink="/services/digital-marketing">
+              Digital Marketing Service
+            </a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

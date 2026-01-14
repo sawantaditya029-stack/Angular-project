@@ -1,0 +1,97 @@
+<!-- Banner -->
+<div>
+  <app-banner
+    title="Our Services"
+    subTitle="Driving Digital Growth Through Smart IT Solutions"
+    ctaBtnText="Request A Call"
+    ctaRoute="/contact"
+    bgImg="assets/images/services-bg.jpg"
+  ></app-banner>
+</div>
+
+
+<div class="container pt-5 pb-5 bg-custom ">
+
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">Our Professional Services</h2>
+    <p class="text-muted">
+      Smart, scalable, and result-oriented IT solutions for your business
+    </p>
+  </div>
+
+
+  <div class="row g-4 justify-content-center">
+
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 text-center shadow-sm p-4">
+        <i class="bi bi-laptop fs-1 text-success mb-3"></i>
+        <h5 class="fw-bold">Web Development</h5>
+        <p class="text-muted">
+          Modern, responsive, and high-performance websites tailored to your business needs.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 text-center shadow-sm p-4">
+        <i class="bi bi-phone fs-1 text-success mb-3"></i>
+        <h5 class="fw-bold">Mobile App Development</h5>
+        <p class="text-muted">
+          Feature-rich Android and iOS apps designed for speed, usability, and scalability.
+        </p>
+      </div>
+    </div>
+
+  
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 text-center shadow-sm p-4">
+        <i class="bi bi-megaphone fs-1 text-success mb-3"></i>
+        <h5 class="fw-bold">Digital Marketing</h5>
+        <p class="text-muted">
+          SEO, social media, and paid campaigns to boost visibility and drive conversions.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center mt-5 pt-3">Industries We Serve</h3>
+      <p class="theme-font-size-sm text-center">
+        At DArch Tech, we work with businesses across all industries, delivering scalable digital
+        solutions that meet unique business challenges and customer needs.
+      </p>
+    </div>
+  </div>
+  <div class="row my-3 px-4">
+    @for (INDUSTRIE of INDUSTRIES; track $index) {
+    <div class="col-3 p-3">
+      <div class="d-flex align-items-center flex-column">
+        <i class="bi fs-3 text-secondary" ngClass="{{ INDUSTRIE.icon }}"></i>
+        <div class="theme-font-size-sm theme-text fw-bold">{{ INDUSTRIE.title }}</div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+
+
+<div class="container d-flex gap-5 justify-content-center align-items-center">
+  <div class="d-flex justify-content-center align-items-center flex-column g-3 px-5">
+    <app-count-up limit="35" speed="150"></app-count-up>
+    <div class="text-secondary" style="font-size: 1.2rem;">Active Member</div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center flex-column g-3 px-5">
+    <app-count-up limit="50" speed="100"></app-count-up>
+    <div class="text-secondary" style="font-size: 1.2rem;">Total Project</div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center flex-column g-3 px-5">
+    <app-count-up limit="25" speed="250"></app-count-up>
+    <div class="text-secondary" style="font-size: 1.2rem;">Team Member</div>
+  </div>
+</div>

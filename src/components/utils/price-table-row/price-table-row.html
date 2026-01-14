@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-6 text-secondary border-start border-end py-2 px-4 theme-font-size-sm">{{ service }}</div>
+  <div class="col-2 text-center border-start border-end py-1 px-4 theme-font-size-sm">
+    @if (beginner == 'Y') {
+    <div class="text-center theme-text">✓</div>
+    } @else {
+    <div class="text-center text-danger">✕</div>
+    }
+  </div>
+  <div class="col-2 text-center border-start border-end py-1 px-4 theme-font-size-sm">
+    @if (professional == 'Y') {
+    <div class="text-center theme-text">✓</div>
+    } @else {
+    <div class="text-center text-danger">✕</div>
+    }
+  </div>
+  <div class="col-2 text-center border-start border-end py-1 px-4 theme-font-size-sm">
+    @if (primium == 'Y') {
+    <div class="text-center theme-text">✓</div>
+    } @else {
+    <div class="text-center text-danger">✕</div>
+    }
+  </div>
+</div>

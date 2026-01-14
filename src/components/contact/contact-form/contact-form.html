@@ -1,0 +1,12 @@
+<div class="p-3">
+    <form [formGroup]="contactForm" (ngSubmit)="submitHandler()" class="card p-3 gap-2">
+        <h2 class="theme-text">Get In Touch</h2>
+        <input formControlName="name" class="form-control" type="text" placeholder="enter name">
+        <input formControlName="email" class="form-control" type="email" placeholder="enter email">
+        <input formControlName="mobile" class="form-control" type="tel" placeholder="enter mobile number">
+        <textarea formControlName="about_project" class="form-control" placeholder="tell us about your project" rows="5"></textarea>
+        <button 
+        class="btn btn-sm theme-bg text-white mt-3 rounded-5 py-2" 
+        type="submit">Send Message</button>
+    </form>
+</div>
